@@ -1,7 +1,7 @@
 {
-  "name": "ng-node-environment",
-  "version": "1.1.0-rc1",
-  "description": "Load process.env variables into Angular 2-4",
+  "name": "ng-node-environment-2",
+  "version": "2.1.0-rc1",
+  "description": "Load process.env variables into Angular 2-9",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -19,12 +19,12 @@
   "bugs": {
     "url": "https://github.com/kopz9999/ng-node-environment/issues"
   },
-  "homepage": "https://github.com/kopz9999/ng-node-environment#readme",
+  "homepage": "https://github.com/ferrzo/ng-node-environment#readme",
   "dependencies": {
-    "app-root-path": "^2.0.1",
+    "app-root-path": "^3.0.0",
     "camelize": "^1.0.0",
-    "command-line-args": "^5.0.2",
-    "dotenv": "^4.0.0"
+    "command-line-args": "^5.1.1",
+    "dotenv": "^8.2.0"
   },
   "bin": {
     "node-env-to-ng": "index.js"
