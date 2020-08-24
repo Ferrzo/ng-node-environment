@@ -3,9 +3,11 @@
 
 ## Synopsis
 
-Load process.env variables into Angular 2-4
-Simple command line tool to write environment variables into Angular 2-4.
+Load process.env variables into Angular 2-9
+Simple command line tool to write environment variables into Angular 2-9.
 Supports **dotenv**
+
+(I forked it and published, as creator is inactive)
 
 ## Installation
 
@@ -13,7 +15,7 @@ Supports **dotenv**
 npm install --save ng-node-environment
 ```
 
-I recommend to put this entry on postinstall script. 
+I recommend to put this entry on postinstall script.
 Examples:
 
 ```json
@@ -108,20 +110,18 @@ A local `.env` file can be provided to load environment variables from file
 **NgNodeEnvironment** supports multiple environments for local development.
 By default, a file named `environment.json` in the root folder of the app will be taken.
 
-This default behaviour can be changed through the `--in` option. 
-The following will read the file `./envs/default.json` and will write it into 
+This default behaviour can be changed through the `--in` option.
+The following will read the file `./envs/default.json` and will write it into
 `./src/environments/base.ts`.
 
-```
-$ node ./node_modules/ng-node-environment/index.js --in="./envs/default.json"
+``` $ node ./node_modules/ng-node-environment/index.js --in="./envs/default.json"
 ```
 
-The out file `base.ts` can be overridden with the `--out` option. 
-The following will read the file `./envs/staging.json` and will write it into 
+The out file `base.ts` can be overridden with the `--out` option.
+The following will read the file `./envs/staging.json` and will write it into
 `./src/environments/staging.out.ts`.
 
-```
-$ node ./node_modules/ng-node-environment/index.js --in="./envs/staging.json" --out="./src/environments/staging.out.ts"
+``` $ node ./node_modules/ng-node-environment/index.js --in="./envs/staging.json" --out="./src/environments/staging.out.ts"
 ```
 
 Multiple environments on `package.json`
@@ -147,7 +147,7 @@ Just to make sure it is still working!
 ## Motivation
 
 Well, I don't like to have environment variables on version control because
-I want to be able to configure the application without deploying the app all 
+I want to be able to configure the application without deploying the app all
 over again.
 
 ## License
